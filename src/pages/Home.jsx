@@ -5,7 +5,7 @@ import { AccentText, SectionLabel, GlowDot, Tag } from "../components/UI";
 
 // ── Typing Effect ─────────────────────────────────────────────────────────────
 function TypingEffect() {
-  const titles = ["Web App Developer", "Full-Stack Engineer", "IT Systems Specialist", "PHP & Python Expert", "Big Data Enthusiast"];
+  const titles = ["Web App Developer", "Full-Stack Engineer", "IT Systems Specialist", "PHP & Python Expert", "Big Data Analyst"];
   const [typed, setTyped] = useState("");
   const [tIdx, setTIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
@@ -98,7 +98,7 @@ function HeroAvatar() {
             marginBottom: "20px", position: "relative", zIndex: 1,
             boxShadow: `0 0 40px ${theme.accentGlow}`,
           }}>
-            <span style={{ fontFamily: fonts.display, fontSize: "48px", fontWeight: 800, color: "#000" }}>SS</span>
+           <img src="/ss.jpeg" style={{width:"100%",height:"100%",objectFit:"cover"}} />
           </div>
           <div style={{ fontFamily: fonts.display, fontSize: "17px", fontWeight: 700, color: theme.text, position: "relative", zIndex: 1 }}>
             Solaiman Sikder
@@ -111,7 +111,9 @@ function HeroAvatar() {
             { label: "PHP", top: "16%", left: "6%" },
             { label: "Python", top: "52%", left: "2%" },
             { label: "Docker", top: "30%", right: "4%" },
-            { label: "MySQL", top: "70%", right: "6%" },
+            // { label: "MySQL", top: "40%", right: "6%" },
+             { label: "postgresql", top: "10%", right: "6%" },
+              { label: "React", top: "60%", right: "6%" },
           ].map((b, i) => (
             <div key={i} style={{
               position: "absolute",
@@ -144,7 +146,7 @@ function HeroAvatar() {
 
 // ── Floating Tech Bar ─────────────────────────────────────────────────────────
 function TechBar() {
-  const techs = ["PHP", "Python", "JavaScript", "MySQL", "Docker", "Azure", "REST API", "Git", "HTML5", "CSS3", "Firebase", "Mikrotik"];
+  const techs = ["React",  "PHP", "Python","CSC", "NumPy", "Panda", "Matplotlib","Django", "JavaScript", "JavaScript", "MySQL","Postgresql", "Docker", "Render", "REST API","Neon", "Git", "Rest API", "Tailwind CSS", "Firebase", "Mikrotik API"];
   return (
     <div style={{
       overflow: "hidden",
@@ -186,9 +188,12 @@ function TechBar() {
 // ── Recent Work Preview ───────────────────────────────────────────────────────
 function RecentWork({ navigate }) {
   const works = [
+    { title: "Ecommerce Automation", year: "2025–26", color: theme.red, cat: "Web App" },
+    { title: "Fuel Station Automation", year: "2024–25", color: theme.green, cat: "Web App" },
     { title: "ISP Franchise Platform", year: "2022–23", color: theme.accent, cat: "Systems" },
     { title: "Business Mapping System", year: "2021", color: theme.blue, cat: "Web App" },
     { title: "ERP & POS Solution", year: "2016–19", color: theme.purple, cat: "Enterprise" },
+    { title: "Courier Solution", year: "2015–16", color: theme.pink, cat: "Web App" },
   ];
 
   return (
@@ -312,9 +317,9 @@ function CTABanner({ navigate }) {
 export default function Home() {
   const navigate = useNavigate();
   const stats = [
-    { num: "7+", label: "Years Exp." },
-    { num: "3", label: "Companies" },
-    { num: "20+", label: "Projects" },
+    { num: "8+", label: "Years Exp." },
+    { num: "4", label: "Companies" },
+    { num: "90+", label: "Projects" },
     { num: "2", label: "Countries" },
   ];
 

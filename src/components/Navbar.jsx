@@ -60,7 +60,7 @@ export default function Navbar() {
             backgroundClip: "text",
           }}
         >
-          SS<span style={{ WebkitTextFillColor: theme.accent }}>.</span>
+          Solaiman<span style={{ WebkitTextFillColor: theme.accent }}>.</span>
         </div>
 
         {/* Desktop Links */}
